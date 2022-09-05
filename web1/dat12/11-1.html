@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+header{
+    border: 1px solid black;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+header > h1 {
+    background-color: yellow;
+    float: left;
+    width: 200px;
+    line-height: 100px;
+    text-align: center;
+}
+
+nav{
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+
+nav ul {
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+nav ul:nth-child(1) li {
+    background-color: yellow;
+    float: left;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+nav ul:nth-child(2) li {
+    float: left;
+    padding-left: 20px;
+    background-color: orange;
+    line-height: 30px;
+    margin-top:40px;
+}
+
+
+#main{
+    width: 1000px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+#main section{
+    width: 700px;
+    overflow: hidden;
+    float: left;
+}
+#main section article{
+    border: 2px solid black;
+    width: 700px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+article>h2{
+    background-color: antiquewhite;
+}
+
+aside {
+    border: 2px solid black;
+    width: 280Px;
+    float: right;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+aside .bannerbox {
+    background-color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+footer{
+    clear: both;
+    border: 1px solid black;
+    width: 1000px;
+    height: 50px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    
+}
+
+
+
+    
+
+
+    </style>
+</head>
+<body>
+     <header>
+        <H1>web-LOGO</H1>
+        <nav>
+            <ul>
+                <li>menu1</li>
+                <li>menu1</li>
+                <li>menu1</li>
+            </ul>
+            <ul>
+                <li>menu2</li>
+                <li>menu2</li>
+                <li>menu2</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id=main>
+        <section>
+            <article>
+                <h2>Main Article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </article>
+            <article><h2>Main Article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </article>
+            <article><h2>Main Article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </article>
+        </section>
+        <aside> <h2>right aside</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+        <lable for=email>Maile</lable>
+        <input type="email">
+        <button>mailto</button>
+        <div class="bannerbox"><h2>TEXT</h2>
+            <p>bannet</p>
+        </div>
+    </aside>
+    </main>
+        <footer>
+            <p>HTMl5 CORPYRIGHT</p>
+        </footer>  
+</body>
+</html>

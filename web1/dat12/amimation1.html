@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:#232323;
+        }
+        .circle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+           width: 48px;
+           height: 48px;
+           border-radius: 50px;
+           transform: translate(-50%, -50%);
+        }
+        .mini-circle{
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 8px solid #ebebeb;
+            border-top: 8px solid red;
+            animation-duration:2s;
+            animation-name: circle-animation;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes circle-animation{
+            from{
+              transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <div class="mini-circle"></div>
+    </div>
+</body>
+</html>
